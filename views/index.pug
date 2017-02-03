@@ -1,0 +1,27 @@
+html
+  head
+    title URL Shortener Microservice | FreeCodeCamp
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+  body
+    .container
+        .page-header
+            h1 File Metadata Microservice #[small FreeCodeCamp API Projects]
+        .content
+            p
+                |This is an implementation of FreeCodeCamp's 
+                a(href="https://www.freecodecamp.com/challenges/file-metadata-microservice") File Metadata API project
+                |.
+            form(method="post" enctype="multipart/form-data")
+                label.btn.btn-default.btn-file Browse
+                    input#upfile(type="file" style="display:none;" name="upfile")
+                span.filename
+                <br><br>
+                button.btn.btn-primary(type="submit") Invia
+    script.
+        $(function() {
+            $("input:file").change(function (){
+                var fileName = $(this).val().replace(/\\/g, '/').replace(/.*\//, '');
+                $(".filename").html(fileName);
+            });
+        });

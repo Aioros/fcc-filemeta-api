@@ -1,0 +1,26 @@
+{
+  "name": "fcc-filemeta-api",
+  "version": "1.0.0",
+  "description": "An implementation of FreeCodeCamp's File Metadata Microservice API",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "multer": "^1.3.0",
+    "pug": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aioros/fcc-filemeta-api.git"
+  },
+  "author": "Aioros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aioros/fcc-filemeta-api/issues"
+  },
+  "homepage": "https://github.com/Aioros/fcc-filemeta-api#readme"
+}
